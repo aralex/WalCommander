@@ -210,6 +210,12 @@
     <ClCompile Include="wal\IntrusivePtr.h">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="swl\swl_menutextinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileassociations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="charsetdlg.h">
