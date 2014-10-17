@@ -13,7 +13,7 @@
     Name="WalCommander"
     Language="1049"
     Codepage="1251"
-    Version="0.17.1.1"
+    Version="0.18.0"
     Manufacturer="corporateshark"
     UpgradeCode="57616C43-6F6D-6D61-6E64-657201010000">
     <!--
@@ -29,7 +29,7 @@
       InstallerVersion="200"
       Compressed="yes"
       SummaryCodepage="1251"
-      Description="Пакет установки программы WalCommander"
+      Description="!(loc.LOCID_INST_PACK)"
       Manufacturer="corporateshark"
       Comments="..." />
     
@@ -75,8 +75,8 @@
       <Component Id="wcmExeComponent" Guid="41746C61-732D-4B61-7264-000000010001">
         <File Id="wcmExe" Name="$(var.wcm.TargetFileName)" Source="$(var.wcm.TargetPath)" DiskId="1" KeyPath="yes" >
           <!-- Ярлык для запуска программы -->
-          <Shortcut Id="DesktopShortcut" Name="WalCommander" Description="Запуск программы WalCommander" WorkingDirectory="DATA_LOCATION" Directory="DesktopFolder" Advertise="yes" Icon="$(var.wcm.TargetFileName)" />
-          <Shortcut Id="ProgramsMenuShortcut" Name="WalCommander" Description="Запуск программы WalCommander" WorkingDirectory="DATA_LOCATION" Directory="CompanyNameFolder3" Advertise="yes" Icon="$(var.wcm.TargetFileName)" />
+          <Shortcut Id="DesktopShortcut" Name="WalCommander" Description="!(loc.LOCID_APP_EXECUTION)" WorkingDirectory="DATA_LOCATION" Directory="DesktopFolder" Advertise="yes" Icon="$(var.wcm.TargetFileName)" />
+          <Shortcut Id="ProgramsMenuShortcut" Name="WalCommander" Description="!(loc.LOCID_APP_EXECUTION)" WorkingDirectory="DATA_LOCATION" Directory="CompanyNameFolder3" Advertise="yes" Icon="$(var.wcm.TargetFileName)" />
         </File>
 
         <RemoveFolder Id='RemoveCompanyNameFolder3' Directory='CompanyNameFolder3' On='uninstall' />
@@ -190,7 +190,7 @@
 
 
     <!-- Именованные наборы компонентов -->
-    <Feature Id="wcm" Title="wcm" Description="Программа WalCommander." Level="1" ConfigurableDirectory="INSTALL_LOCATION">
+    <Feature Id="wcm" Title="wcm" Description="!(loc.LOCID_WCM_APP)" Level="1" ConfigurableDirectory="INSTALL_LOCATION">
       <ComponentRef Id="wcmExeComponent" />
       
       <ComponentRef Id="COMP_00_00" />

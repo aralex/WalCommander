@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="ru-RU" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+	<String Id="LOCID_APP_EXECUTION" Overridable="yes">Запуск программы Wal Commander</String>
+  <String Id="LOCID_INST_PACK" Overridable="yes">Пакет установки программы WalCommander</String>
+  <String Id="LOCID_WCM_APP" Overridable="yes">Программа WalCommander.</String>
+</WixLocalization>

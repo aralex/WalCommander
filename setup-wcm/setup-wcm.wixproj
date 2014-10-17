@@ -15,18 +15,24 @@
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <DefineConstants>Debug</DefineConstants>
-    <Cultures>ru-RU</Cultures>
+    <Cultures>en-US;ru-RU</Cultures>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
-    <Cultures>ru-RU</Cultures>
+    <Cultures>en-US;ru-RU</Cultures>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="setup-wcm.wxs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\wcm\wcm_2010.vcxproj">
+    <WixExtension Include="WixUIExtension">
+      <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
+      <Name>WixUIExtension</Name>
+    </WixExtension>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\wcm\wcm_2013.vcxproj">
       <Name>wcm</Name>
       <Project>{b9b0f7d2-36b9-4409-a2d7-b61548647379}</Project>
       <Private>True</Private>
@@ -36,10 +42,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <WixExtension Include="WixUIExtension">
-      <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
-      <Name>WixUIExtension</Name>
-    </WixExtension>
+    <EmbeddedResource Include="messages.en-US.wxl" />
+    <EmbeddedResource Include="messages.ru-RU.wxl" />
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
   <!--
