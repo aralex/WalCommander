@@ -70,6 +70,7 @@
     <ClCompile Include="wal\wal_tmpls.cpp" />
     <ClCompile Include="wcm-config.cpp" />
     <ClCompile Include="wal\IntrusivePtr.h" />
+    <ClCompile Include="strmasks.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="charsetdlg.h" />

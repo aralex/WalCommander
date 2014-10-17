@@ -213,6 +213,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="strconfig.cpp" />
+    <ClCompile Include="strmasks.cpp" />
     <ClCompile Include="swl\swl_button.cpp" />
     <ClCompile Include="swl\swl_editline.cpp" />
     <ClCompile Include="swl\swl_layout.cpp" />
